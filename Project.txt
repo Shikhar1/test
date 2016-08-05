@@ -1,0 +1,96 @@
+Project Name: edSters
+
+Project Description:
+
+   edSters will be a social networking platform of all active students and alumni of edwisor.com.
+The idea behind the project is to connect the “Expert Alumni” with “Soon to be expert” students
+on the platform, so that they can be a knowledge transfer between the entities. It will be a
+simple social network intended for simple sharing and discussion purposes.
+
+Technologies Used:
+
+ NodeJS,ExpressJS, MongoDB, Jade.
+ 
+ Features of the platform :
+ 1)Sign up functionality:-
+ 
+User should be able to sign up to the platform. No user is allowed to do anything unless
+they sign up by giving their details. The details that are to be taken at this stage are First
+Name, Last Name, Email, Mobile Number and of course the password. You have to
+make sure that a userName is being generated on each signup request which is unique
+to user and this userName will be used later in different part of projects to address the
+user. You also have to make sure that the email id is unique, and no two user can use
+the same email id.
+
+2) Login Functionality:-
+
+User should be able to login to the system and access his dashboard using his registered
+email and password as credentials. In case of wrong credentials, you should display him an
+error message on same page and ask him to login again.
+
+3) Logout Functionality:-
+
+User should be able to logout from the portal using a simple click. An account should
+auto logout after 24 hours for security purposes.
+
+4) Profile Page:-
+
+User should have a personal profile page where all his information(email, number
+included) should be displayed along with the number of his followers and number of people he
+is following on the network. The user should also be able to edit this information whenever he
+wants. So there should be an editable version of profile page (maybe another page) where the
+user can update the information and upon the updation It should redirect the user to profile
+page.
+
+5) Other User profile Page:-
+
+This should be exactly similar to user’s profile page with just one exception. There should be a
+follow button on this page that enables the logged in user to follow another user. After the
+follow action is complete, the page should refresh and the name of button/link should be
+unfollow and user should be able to unfollow the other user if he wants. Better to use a Toggle
+API here (A single API which can perform both the function of follow and unfollow).
+
+6) Dashboard Page:-
+
+This page should display all the feeds of the user. This page should contain the status updates
+of all the users that are being followed by the logged in user , sorted by date (timestamp) in
+decreasing order of creation i.e the latest post should come on top and so on. Each post should
+have a view details button which should open a post page. Also, each post should display the
+number of likes and comments on that post. Clicking the number of likes or number of
+comments should open a view which shows the list of people who have liked the post.
+Dashboard should also have a create a post button (preferably on top of page), that takes user
+to create a post page.
+
+7) Create a Post Page:-
+
+This page should have a textarea through which user can create a post. The posts that are
+created should meet following criteria 
+
+1)Post text should be stored in an HTML format in Database
+
+2) Links in the posts should automatically get converted to HTML <a> tag, so that it becomes
+clickable when the post appears in the Dashboard news feed. (Hint : You can achieve this
+through a simple javascript function)
+
+3) Hash Tags in post should be stored in an array in Post Model. These Hashtags should be
+displayed at the bottom of the post in Dashboard news feed.
+
+8) Post Page:-
+
+This page should display all the details of the post along with the comments present on the post.
+It should look exactly like the facebook post view. (except the extra stuff on facebook’s post
+view page like chatbox or advertisements etc. They should be ignored).
+On this page, user should be able to like/unlike the post and also comment on it if he wants.
+Comments should be sorted in increasing order of timestamp just like facebook. I.e the latest
+comment should be at bottom.
+There should also be a button on the bottom (center aligned) which takes user back to
+dashboard.
+
+9) Error page:-
+This page should display the errors along with the HTTP status code of the error. The error
+message should be user friendly so that user can understand
+
+
+Name: SHIKHAR KAMAL
+E-mail ID: shikharkama123@gmail.com 
+Mob No.: 9953560869
